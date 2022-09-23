@@ -1,0 +1,31 @@
+### Algoritmo em Java para controle de estoque ☕🧩
+
+
+
+#### Programa para ler os dados de um produto em estoque (nome, preço e quantidade no estoque). 
+
+#### Em seguida:
+
+
+
+-  Mostrar os dados do produto (nome, preço, quantidade no estoque, valor total no
+  estoque)
+
+-  Realizar uma entrada no estoque e mostrar novamente os dados do produto
+
+- Realizar uma saída no estoque e mostrar novamente os dados do produto
+
+- Para resolver este problema, você deve criar a CLASSE com os seguintes MÉTODOS e ATRIBUTOS:
+
+  - **Product**()
+
+    
+
+    - Atributos
+      - name
+      - price
+      - quantity
+    - Métodos
+      - public double totalValueQuantity()
+      - public void addProductStock(quantity);
+      - public void removeProductStock(quantity);
