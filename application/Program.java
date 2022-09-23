@@ -13,10 +13,13 @@ public class Program {
 
 		// Declaração de variáveis
 
-		Product product = new Product(); // Instanciado o objeto product ( referência para o Product
+		Product product = new Product(); // instanciado o objeto product ( referência para o Product
 
 		System.out.println("Enter product data:");
-
+		
+		/* Lendo cada dado de entrada e inserindo na classe product em seu respectivo 
+		   atributo. Ao final de casa inserção cria-se um objeto na classe product 
+		 */
 		System.out.print("Name: ");
 		product.nome = sc.nextLine();
 
@@ -26,7 +29,8 @@ public class Program {
 		System.out.print("Quantity in stock: ");
 		product.quantity = sc.nextInt();
 		
-		System.out.println("Nome: "+ product.nome + "\nProduto: " + product.price + "\nQuantidade: "+ product.quantity);
+		System.out.println(product);
+		
 
 		sc.close();
 

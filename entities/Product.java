@@ -23,4 +23,19 @@ public class Product {
 
 		this.quantity -= quantity;
 	}
+	
+	/* Como a Classe Product também é uma classe Object, 
+	   estou aqui sobrepondo a função toString padrão quem vem no Objetc 
+	   assim sendo possivel implementar uma versão toString
+	   */
+	public String toString() { 
+		return "\n"+ nome
+				+ ", $ "
+				+ String.format("%.2f", price)
+				+ ", "
+				+ quantity
+				+ " units, Total: $ "
+				+ totalValueInStock();
+		
+	}
 }
