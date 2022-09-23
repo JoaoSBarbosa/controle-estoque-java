@@ -26,16 +26,16 @@ public class Product {
 	
 	/* Como a Classe Product também é uma classe Object, 
 	   estou aqui sobrepondo a função toString padrão quem vem no Objetc 
-	   assim sendo possivel implementar uma versão toString
+	   assim sendo possível implementar uma versão toString
 	   */
 	public String toString() { 
-		return "\n"+ nome
+		return  nome
 				+ ", $ "
 				+ String.format("%.2f", price)
 				+ ", "
 				+ quantity
 				+ " units, Total: $ "
-				+ totalValueInStock();
+				+ String.format("%.2f", totalValueInStock());
 		
 	}
 }
